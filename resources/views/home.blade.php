@@ -27,7 +27,7 @@
                     <div class="mt-9 flex flex-col gap-3 sm:flex-row">
 
                         <a
-                            href="#"
+                            href="https://app.gastronomia.ai"
                             class="inline-flex items-center justify-center rounded-xl bg-gia-orange px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                         >
                             {{ __('home.hero.primary_cta') }}
@@ -59,8 +59,6 @@
 
                 </div>
 
-
-                {{-- PRODUCT VISUAL --}}
                 {{-- PRODUCT VISUAL --}}
 <div class="relative lg:pl-8">
 

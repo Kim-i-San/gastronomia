@@ -28,7 +28,7 @@
 
 
             {{-- LINKS --}}
-            <div class="grid grid-cols-2 gap-x-16 gap-y-8 sm:grid-cols-3 lg:gap-x-20">
+            <div class="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-4 lg:gap-x-14">
 
                 {{-- PRODUCT --}}
                 <div>
@@ -44,6 +44,13 @@
                         >
                             {{ __('common.footer.product') }}
                         </a>
+
+                        <a
+    href="{{ url('/'.app()->getLocale().'/faq') }}"
+    class="text-sm text-gia-navy/50 transition hover:text-gia-orange"
+>
+    FAQ
+</a>
 
                         <a
                             href="{{ url('/'.app()->getLocale().'/pricing') }}"
@@ -99,6 +106,42 @@
 
                     </nav>
                 </div>
+
+
+                {{-- ECOSYSTEM --}}
+<div>
+    <a
+        href="https://gastronomia.tech"
+        class="font-display text-sm font-semibold text-gia-navy transition hover:text-gia-orange"
+    >
+        Gastronomia Tech
+    </a>
+
+    <div class="mt-4 border-l border-gia-navy/15 pl-4">
+
+        <div class="flex flex-col gap-2.5">
+
+            <a
+                href="https://gastronomia.ai"
+                class="relative text-sm font-semibold text-gia-orange"
+                aria-current="page"
+            >
+                <span class="absolute -left-[17px] top-1/2 h-px w-3 -translate-y-1/2 bg-gia-navy/15"></span>
+                GastronomIA
+            </a>
+
+            <a
+                href="https://qaldo.io"
+                class="relative text-sm text-gia-navy/50 transition hover:text-gia-orange"
+            >
+                <span class="absolute -left-[17px] top-1/2 h-px w-3 -translate-y-1/2 bg-gia-navy/15"></span>
+                QALDO
+            </a>
+
+        </div>
+
+    </div>
+</div>
 
             </div>
 

@@ -8,6 +8,18 @@ Route::get('/', function () {
     return redirect("/{$locale}");
 });
 
+Route::get('/aligro', function () {
+    $locale = request()->getPreferredLanguage(['en', 'fr', 'de', 'it']) ?? 'en';
+
+    return redirect("/{$locale}/aligro");
+});
+
+Route::get('/faq', function () {
+    $locale = request()->getPreferredLanguage(['en', 'fr', 'de', 'it']) ?? 'en';
+
+    return redirect("/{$locale}/faq");
+});
+
 Route::prefix('{locale}')
     ->where(['locale' => 'en|fr|de|it'])
     ->middleware('locale')
@@ -27,6 +39,10 @@ Route::prefix('{locale}')
 
     Route::view('/legal', 'legal')
     ->name('legal');
+
+    Route::view('/aligro', 'aligro')->name('aligro');
+
+    Route::view('/faq', 'faq')->name('faq');
 
 
     });
