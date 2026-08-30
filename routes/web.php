@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect('/en');
+    $locale = request()->getPreferredLanguage(['en', 'fr', 'de', 'it']) ?? 'en';
+
+    return redirect("/{$locale}");
 });
 
 Route::prefix('{locale}')
